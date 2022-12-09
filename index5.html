@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main5.css">
+</head>
+<body>
+        <header>
+            <div class="innerheader">
+                <div class="leftside"></div>
+                <div class="rightside">
+                    <p class="title">Reset Your password </p>
+                    <div class="btnsparent">
+                        <input type="password" placeholder="Enter your password" id="password">
+                        <input type="password" placeholder="confirm your password" id="confirm">
+                        <button class="btn" type="submit" onclick="Submit()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <script>
+            function Submit(){
+    let password = document.getElementById("password");
+    let confirm = document.getElementById("confirm");
+    let create = document.getElementById("create");
+    if(confirm.value != password.value){
+        alert("your password or confirm is wrong .")
+    }
+    else{
+        location.replace("index6.html")
+    }
+}
+    </script>
+</body>
+</html>

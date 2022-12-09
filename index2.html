@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+
+    <header>
+        <div class="innerheader">
+            <div class="leftside"></div>
+            <div class="rightside">
+                <p class="title">Create Account</p>
+                <p class="text">Go ahead and sign up, let everyone know how awesome you are!</p>
+                <div class="parent">
+                    <input type="text" placeholder="User Name" >
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Password" id="password">
+                    <input type="password" placeholder="Confirm Password" id="confirm">
+                    <button class="btn1" type="submit" onclick="createBtn()" id="create">Create Account</button>
+                    <a href="index3.html"><button class="btn2">I already have an account</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<script>
+    function createBtn(){
+    let password = document.getElementById("password");
+    let confirm = document.getElementById("confirm");
+    let create = document.getElementById("create");
+    if(confirm.value != password.value){
+        alert("your password or confirm is wrong .")
+    }
+    else{
+        location.replace("index3.html")
+    }
+}
+</script>
+</body>
+</html>
